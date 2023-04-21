@@ -1,0 +1,293 @@
+{% extends "base.html" %}
+{% block content %}
+<div class=" py-3 text-white bg-dark">
+
+    <ul class="nav nav-pills mb-auto">
+        <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">
+                Question Dashboard
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link text-white">
+                Dashboard
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link text-white">
+                Orders
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link text-white">
+                Products
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link text-white">
+                Customers
+            </a>
+        </li>
+    </ul>
+
+</div>
+<div class="wrapper">
+    <div class="row">
+        <div class="col-sm-6">
+            <label for="Name" class="form-label">Select Role</label>
+            <select class="selectpicker" multiple data-live-search="true">
+                {% for i in role %}
+                <option>{{i.role_name}}</option>
+                {% endfor %}
+            </select>
+
+        </div>
+        <div class="col-sm-6 mb-3">
+            <label for="Name" class="form-label">Select Language</label>
+            <select class="selectpicker" onchange="getLanguage(this)" multiple data-live-search="true">
+                {% for i in lang %}
+                <option>{{i.name}}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-sm-6">
+            <label for="Name" class="form-label">Select Question Type</label>
+            <select class="selectpicker" onchange="getQuestionType(this)" data-live-search="true">
+                <option value="None">Nothing Selected</option>
+                {% for i in qType %}
+                <option>{{i.questionText}}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-sm-6 mb-3" id="selecValidation">
+            <label for="Name" class="form-label">Select Validation Type</label>
+            <select class="selectpicker" data-live-search="true">
+                <option value="None">Nothing Selected</option>
+                {% for i in validationType %}
+                <option>{{i.validationname}}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+
+
+        <div class="col-sm-6 mb-3" id="maxButtonInput" style="display: none;">
+            <label for="Name" class="form-label" id="labelText">Max Button 3 Allow</label>
+            <input type="text" class="form-control" onkeyup="noOfTextAppend(this)" typeAttr="Button" placeholder="No of button" />
+        </div>
+
+        <div class="col-sm-12 mb-3" id="maxImageInput" style="display: none;">
+            <label for="Name" class="form-label">File Upload (png,jpg,jpeg only)</label>
+            <input type="file" class="form-control" />
+        </div>
+
+        <div class="col-sm-12 mb-3" id="maxListInput" style="display: none;">
+            <label for="Name" class="form-label">Max Button 10 Element Allow</label>
+            <input type="text" class="form-control" onkeyup="noOfTextAppend(this)" typeAttr="List" placeholder="No of list" />
+        </div>
+
+
+        <div class="col-sm-12 mb-3" id="appendListTextBox">
+            <!-- <div class="col-sm-4 mb-3">
+                <label for="Name" class="form-label">Upload Image in Hindi</label>
+                <input type="text" class="form-control" onkeyup="noOfTextAppend(this)" typeAttr="List" placeholder="No of list" />
+                <input type="text" class="form-control" onkeyup="noOfTextAppend(this)" typeAttr="List" placeholder="No of list" />
+                <input type="text" class="form-control" onkeyup="noOfTextAppend(this)" typeAttr="List" placeholder="No of list" />
+            </div>
+            <div class="col-sm-4 mb-3">
+                <label for="Name" class="form-label">Upload Image in English</label>
+                <input type="text" class="form-control" onkeyup="noOfTextAppend(this)" typeAttr="List" placeholder="No of list" />
+                <input type="text" class="form-control" onkeyup="noOfTextAppend(this)" typeAttr="List" placeholder="No of list" />
+                <input type="text" class="form-control" onkeyup="noOfTextAppend(this)" typeAttr="List" placeholder="No of list" />
+            </div>
+            <div class="col-sm-4 mb-3">
+                <label for="Name" class="form-label">Upload Image in Gujrati</label>
+                <input type="text" class="form-control" onkeyup="noOfTextAppend(this)" typeAttr="List" placeholder="No of list" />
+                <input type="text" class="form-control" onkeyup="noOfTextAppend(this)" typeAttr="List" placeholder="No of list" />
+                <input type="text" class="form-control" onkeyup="noOfTextAppend(this)" typeAttr="List" placeholder="No of list" />
+            </div> -->
+
+        </div>
+
+        <!-- <div class="col-sm-12 mb-3">
+     <div class="col-sm-4 mb-3">
+               <label for="Name" class="form-label">Upload Image in Hindi</label>
+        <input type="file" class="form-control" />
+        </div>
+        <div class="col-sm-4 mb-3">
+            <label for="Name" class="form-label">Upload Image in English</label>
+            <input type="file" class="form-control" />
+        </div>
+        <div class="col-sm-4 mb-3">
+            <label for="Name" class="form-label">Upload Image in Gujrati</label>
+            <input type="file" class="form-control" />
+        </div> 
+     
+        </div> -->
+
+
+
+        <div class="col-sm-12 mb-3" id="questionTextAppend">
+            <!-- <label for="Name" class="form-label">File</label>
+            <input type="file" class="form-control" /> -->
+        </div>
+        <div class="col-sm-12 mb-3" id="questionListAppend">
+            <!-- <label for="Name" class="form-label">File</label>
+        <input type="file" class="form-control" /> -->
+        </div>
+
+
+        <div class="col-sm-6 mb-3">
+            <!-- <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheckBox1">
+                <label class="custom-control-label" for="customCheckBox1">Check this custom checkbox</label>
+                <input type="checkbox" class="custom-control-input" id="customCheckBox1">
+                <label class="custom-control-label" for="customCheckBox1">Check this custom checkbox</label>
+            </div> -->
+        </div>
+        <!-- <div class="col-sm-6 mb-3">
+            <div class="custom-control custom-checkbox">
+                <input type="radio" name="radio-group" class="custom-control-input" id="customCheckBox1">
+                <label class="custom-control-label" for="customCheckBox1">Check this custom radio</label>
+                <input type="radio" name="radio-group" class="custom-control-input" id="customCheckBox1">
+                <label class="custom-control-label" for="customCheckBox1">Check this custom radio</label>
+            </div>
+        </div> -->
+        <div class="col-sm-6 mb-3">
+            <input type="submit" value="Add Question" />
+        </div>
+    </div>
+</div>
+<script>
+    localStorage.setItem("questionType", "nA");
+    localStorage.setItem("langType", "NA");
+
+
+    function noOfTextAppend(thistxt) {
+        var no = 0
+        if (localStorage.getItem("questionType") == "List") {
+            $('#appendListTextBox').html("");
+            if (parseInt($(thistxt).val()) < 11) {
+                $('#labelText').html("<p>Max 10 Element Allowed For List</p>")
+                no = $(thistxt).val();
+                var mainContainer = '';
+                var innerContainer = '';
+                var containerStart = '<div class="col-sm-4 mb-3">';
+                var containerEnd = '</div>';
+                var realConatiner = '';
+                if(localStorage.getItem("langType") != 'NA'){
+                    var lagList = localStorage.getItem("langType").split(",");
+                console.log("AAAAAAAAA",lagList)
+                for (var i = 0; i < lagList.length; i++) {
+                    for(var j = 0; j < parseInt(no); j ++){
+                        innerContainer = innerContainer + '<input type="text" class="form-control" onkeyup="noOfTextAppend(this)" typeAttr="List" placeholder="Enter word in '+lagList[i]+'" />';
+                    }
+                    mainContainer = containerStart + '<label for="Name" class="form-label">List Element in '+lagList[i]+' </label>' + innerContainer + containerEnd;
+                    
+                    realConatiner = realConatiner + mainContainer;
+                    mainContainer = "";
+                    innerContainer = "";
+                }
+                $('#appendListTextBox').html(realConatiner);
+                }else{
+                    $('#labelText').html("<p style='color:red;'>Please Select Language</p>")
+                }
+              
+            }
+            else {
+                $('#labelText').html("<p style='color:red;'>Max 10 Element Allowed For List</p>")
+                return false;
+            }
+
+
+        }
+        if (localStorage.getItem("questionType") == "Button") {
+            if (parseInt($(thistxt).val()) < 4) {
+                $('#appendListTextBox').html("");
+            if (parseInt($(thistxt).val()) < 4) {
+                $('#labelText').html("<p>Max 3 Element Allowed For List</p>")
+                no = $(thistxt).val();
+                var mainContainer = '';
+                var innerContainer = '';
+                var containerStart = '<div class="col-sm-4 mb-3">';
+                var containerEnd = '</div>';
+                var realConatiner = '';
+
+                var lagList = localStorage.getItem("langType").split(",");
+                for (var i = 0; i < lagList.length; i++) {
+                    for(var j = 0; j < parseInt(no); j ++){
+                        innerContainer = innerContainer + '<input type="text" class="form-control" onkeyup="noOfTextAppend(this)" typeAttr="List" placeholder="Enter word in '+lagList[i]+'" />';
+                    }
+                    mainContainer = containerStart + '<label for="Name" class="form-label">List Element in '+lagList[i]+' </label>' + innerContainer + containerEnd;
+                    
+                    realConatiner = realConatiner + mainContainer;
+                    mainContainer = "";
+                    innerContainer = "";
+                }
+                $('#appendListTextBox').html(realConatiner);
+            }
+            else {
+                $('#labelText').html("<p style='color:red;'>Max 3 Element Allowed For List</p>")
+                return false;
+            }
+
+            } else {
+                $('#labelText').html("<p style='color:red;'>Max 3 Element Allowed For List</p>")
+                return false;
+            }
+        }
+
+        console.log(";lknk", no = $(thistxt).val(), typeof(no = $(thistxt).val()))
+
+        //   alert($(thistxt).val());
+    }
+
+    function getQuestionType(thisText) {
+        localStorage.setItem("questionType", $(thisText).val());
+        $('#questionTextAppend').html("");
+        
+
+
+        if ($(thisText).val() == "Image") {
+            $("#selecValidation").attr('disabled', true);
+            $("#selecValidation").hide();
+        } else if ($(thisText).val() == "Text") {
+            $("#selecValidation").attr('disabled', true);
+            $("#selecValidation").hide();
+            $('#maxButtonInput').hide();
+            var lagList = localStorage.getItem("langType").split(",");
+            console.log("lagList", lagList);
+            for (var i = 0; i < lagList.length; i++) {
+                $('#questionTextAppend').append('<label for="Name" class="form-label">Name</label><textarea class="form-control" style="height: 100px;" placeholder="Type Question in ' + lagList[i] + '"></textarea>');
+
+            }
+        } else if ($(thisText).val() == "None") {
+            $("#selecValidation").attr('disabled', true);
+            $("#selecValidation").hide();
+            $('#maxButtonInput').hide();
+        } else {
+            $("#selecValidation").attr('disabled', false);
+            $("#selecValidation").show();
+            $('#maxButtonInput').show();
+            if ($(thisText).val() == "Button"){
+                $('#labelText').html("<p>Max 3 Element Allowed For List</p>")
+            }
+            if ($(thisText).val() == "List"){
+                $('#labelText').html("<p>Max 10 Element Allowed For List</p>")
+            }
+            
+            // var lagList = localStorage.getItem("langType").split(",");
+            // for (var i = 0; i < lagList.length; i++) {
+            //     $('#questionListAppend').append('<input type="text" class="form-control"   placeholder="No of list" />');
+            // }
+        }
+    }
+
+
+
+    function getLanguage(thisText) {
+        var dataLangAttr = $(thisText).val();
+        localStorage.setItem("langType", dataLangAttr);
+    }
+</script>
+{% endblock %}

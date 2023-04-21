@@ -1,0 +1,31 @@
+<!-- <a href="//api.whatsapp.com/send?phone=+1 (415) 523-8886&text=Hi, Iam IFA bot. Click on the link below to register" target="_blank" title="Share on whatsapp">WhatsApp</a> -->
+<!-- <a href="intro_message" target="_blank" title="Share on whatsapp">WhatsApp</a> -->
+
+
+<style>
+    .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+</style>
+
+<h1 style="text-align:center"><u>  IFA BOT  123 </u></h1>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="{% url 'intro_message' %}" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>

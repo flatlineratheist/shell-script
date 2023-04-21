@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'zip/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'zip/css/animate.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'zip/css/style.css' %}" />
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="overall text-center margin-top">
+        <img src="{% static 'zip/images/wrong.gif'%}" class="my-4 animate__animated animate__backInDown" alt="wrong" />
+        <div class="col mb-3"><button class="wrong" disabled>WRONG</button></div>
+        <a href="quiz?username={{username}}&status={{givenAnswerWrong}}" class="text-white">NEXT</a>
+    </div>
+</body>
+
+</html>

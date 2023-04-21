@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'zip/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'zip/css/animate.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'zip/css/style.css' %}" />
+    <title>Quiz</title>
+
+</head>
+
+<body>
+    <audio id="my_audio" loop="loop" autoplay="autoplay">
+        <source src="{% static 'zip/images/back_sound.ogg' %}" type="audio/ogg">
+        <source src="{% static 'zip/images/back_sound.mp3' %}" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="overall text-center">
+        <img src="{% static 'zip/images/fds.png' %}" class="my-4 animate__animated animate__backInDown" alt="logo" />
+        <h2 class="animate__animated animate__zoomIn animate__delay-1s">Select And Play</h2>
+        <a href="#" class="btn btn-custom-yellow mb-4 animate__animated animate__backInUp animate__delay-2s">Anemia
+            bingo</a><br />
+        <a href='quiz?username={{username}}' class="btn btn-custom-green animate__animated animate__backInUp animate__delay-3s">Anemia
+            Quiz</a>
+    </div>
+    <script src="{% static 'zip/js/jquery.js' %}"></script>
+    <script src="{% static 'zip/js/custom.js' %}"></script>
+</body>
+
+</html>

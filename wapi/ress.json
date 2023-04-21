@@ -1,0 +1,57 @@
+{
+  "recipient_type": "individual",
+  "to": "whatsapp-id",
+  "type": "audio" | "contact" | "document" | "image" | "location" | "sticker" | "text" | "video",
+  
+  "audio": {
+    "id": "your-media-id",
+  }
+  
+  "document": {
+    "id": "your-media-id",
+    "caption": "your-document-caption-to-be-sent",
+    "filename": "your-document-filename"
+  }
+  
+  "document": {
+    "link": "the-provider-name/protocol://the-url",
+    "provider": {
+        "name" : "provider-name"
+    },
+    "caption": "your-document-caption"
+  }
+  
+  "document": {
+    "link": "http(s)://the-url.pdf",
+    "caption": "your-document-caption"
+  }
+  
+  "video": {
+    "id": "your-media-id",
+    "caption": "your-video-caption"    
+  }
+  
+  "image": {
+    "link": "http(s)://the-url",
+    "provider": {
+        "name" : "provider-name"
+    },
+    "caption": "your-image-caption"
+  }
+  
+  "image": {
+    "id": "your-media-id",
+    "caption": "your-image-caption"
+  }
+  
+  "sticker": {
+    "id": "your-media-id"
+  }
+  
+  "sticker": {
+    "link": "http(s)://the-url",
+    "provider": {
+      "name" : "provider-name"
+    }
+  }
+}
