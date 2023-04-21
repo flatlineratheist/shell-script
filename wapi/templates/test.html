@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<audio id="myAudio">
+  <source src="{% static 'zip/images/back_sound.ogg' %}" type="audio/ogg">
+  <source src="{% static 'zip/images/back_sound.ogg' %}" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<p>Click the buttons to play or pause the audio.</p>
+
+<button id="cliclB" onclick="playAudio()" type="button">Play Audio</button>
+<button onclick="pauseAudio()" type="button">Pause Audio</button>
+
+<script>
+
+$(window).on('load', function() {
+ $('#cliclB').trigger('click');
+});
+
+
+var x = document.getElementById("myAudio");
+
+function playAudio() {
+  x.play();
+}
+
+function pauseAudio() {
+  x.pause();
+}
+</script>
+
+</body>
+</html>

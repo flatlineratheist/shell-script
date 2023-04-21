@@ -1,0 +1,224 @@
+{
+    "intrro_question" : "Hello I am Rati🙏 I can help you or any member of your family with problems related to pregnancy and childcare. Please select your preferred language to receive my assistance.",
+    "langSelectHindi" : "Thank you for choosing English🙏 From now, I will talk to you in English",
+    "registration_intro" : "In order to better assist you, I would like to know something about you. Please tell us about yourself. 😃 Select one option below",
+    "pragnant_women" : "Pregnant woman",
+    "chile_6_age" : "6-month-old baby",
+    "eligible_pragnant_women" : "woman childbearing age",
+    "health_worker" : "A health worker",
+    "who_pragnant" : "Can you tell me who is pregnant in your house??🤰  ",
+    "who_child_6" : "Can you tell us who is the mother of the 6-month-old baby in your household. 🤱👶 ",
+    "self" : "Self",
+    "another" : "Others",
+    "congratulation_self_pragnant" : "Congratulations Didi!! ✨✨🎉 I will take complete care of you during your pregnancy. 😇",
+    "congratulation_another_pragnant" : "Congratulations!! ✨✨🎉 I will take complete care of your family member during her pregnancy.😇",
+    "month_of_pgranancy" : "Didi, could you please tell me in which month of pregnancy you are currently in??",
+    "month_of_another_pgranancy" : "Could you please tell me in which month of pregnancy your family member is currently in???",
+
+   
+
+
+
+    "select":"choose",
+    "select_one":"Select an option",
+    "damoh":"Damoh",
+    "vadodra":"Vadodara",
+    "tendukheda":"Tendukheda",
+    "savli":"Shamli",
+    "select_block":"please select your block",
+    "select_district":"Please select your district",
+    "click":"Click",
+    "remove_knowldege":"We have deleted your information.",
+
+
+
+
+
+
+    "eligible_pragent" : "Can you tell us who is the mother of the 6-month-old baby in your household. 🤱👶",
+    "eligible_pragent_intro" : "Didi, I will provide you with healthcare information and take care of your health. 😇",
+    "eligible_pragent_intro_another" : "I will provide you with healthcare information and take care of the health of your family member. 😇😇",
+    "eligible_pragent_self_age" : "Didi, can you please tell me your age? Please write below👇",
+    "eligible_pragent_another_age" : "What is the age of the women in child bearing age in your family? Please write below 👇",
+    "eligible_pragent_another_name" : "Can you tell me the name of the female member of your family who is in the child bearing age group?",
+
+
+
+
+
+
+
+
+
+    "congratulation_self_child" : "Congratulations Didi!! ✨✨🎉 I will take complete care of you and your child. 😇",
+    "congratulation_another_child" : "Congratulations ✨✨🎉 I will take full care of the health of your family's mother and child. 😇",
+    "self_child" : "Didi how old is your baby now? 👶",
+    "another_child" : "How old is the baby now?👶",
+    "first_month_child_less" : "Less than 1 month",
+    "first_month_child" : "One month",
+    "second_month_child" : "Two months",
+    "third_month_child" : "Three months",
+    "fourth_month_child" : "Four months",
+    "fifth_month_child" : "Five months",
+    "sixth_month_child" : "Six months",
+    "sixth_more_month_child" : "More than 6",
+    "child_age" : ["Less than a month","One month","Two months","Three months","Four months","Five months","Six months","More than 6"],
+    "another_child_name" : "Please tell me in writing the name of that female member of your family who has a child less than 6 months.",
+
+
+    "first" : "First",
+    "second" : "Second",
+    "third" : "Third",
+    "fourth" : "Fourth",
+    "fifth" : "Fifth",
+    "sixth" : "Sixth",
+    "seventh" : "Seventh",
+    "eighth" : "Eighth",
+    "nineth" : "Ninth",
+    "more_nineth" : "More than nine months",
+    "monthList" : ["Second","Third","Fourth","Fifth","Sixth","Seventh","Eighth","Ninth","More than nine months"],
+
+
+    "pargnancy_problem" : "Pregnancy  problems",
+    "pragnancy_problem_1" : "Vomiting and dizziness",
+    "pragnancy_problem_2" : "Muscle spasms",
+    "pragnancy_problem_3" : "Pregnancy danger signs",
+
+
+    "pargnancy_health" : "Health in pregnancy",
+    "parg_health_prob_1" : "Anemia symptoms",
+    "blood_qty_issue" : "What is anemia",
+    "blood_qty_indentity_issue" : "Anemia diagnosis",
+    "blood_qty_effect_issue" : "Anemia effect",
+    "blood_qty_treatment" : "Anemia prevention,remedy",
+
+    "parg_health_prob_2" : "Pregnancy drugs",
+    "parg_health_prob_3" : "Nutritious food",
+    "parg_health_prob_3f" : "Nutritious food.",
+    "iron_food" : "Iron rich diet",
+    "cal_food" : "Calcium rich diet",
+    "parg_health_prob_4" : "Prenatal checkup",
+
+
+
+
+
+
+
+
+
+
+    "dadi_ke_nukhe" : "Grandma Recipes",
+
+    "pargnancy_action_child" : "baby womb movements",
+    "pragnancy_child_movement" : "baby womb movements",
+    "pragnancy_child_develop_monthly" : "baby development month by month",
+
+
+
+    "beneficiary_problems_self" : "Didi do you sometimes feel weak 🙍 ♀️, find swelling in hands and feet, dizziness 🥴 or heaviness 🤯 in your head?",
+    "yes_ok" : "Yes it happens",
+    "no" : "No",
+    "yes" : "Yes",
+    "blood_test" : "Didi, these are the symptoms of anemia. But don't panic. Meet Asha Didi of your village for advice and also get yourself checked 🩸🩸👩 ⚕️",
+    "blood_test_ok" : "Oh wow! This is good {{1}} Didi🎉 But did get your blood test done during pregnancy?",
+    "pragancy_videos" : "Very nice Didi!! 👌🤩 Health checkups should be done from time to time during pregnancy. 👩 ⚕️ This will keep you and your baby healthy and fit. 💫 Watch this video to know about antenatal checkups👇",
+    "pragnancy_test" : "Arre Didi!! 🤔 Do you know Health checkups should be done from time to time during pregnancy. 👩 ⚕️ This will keep you and your child healthy and fit. Meet the Asha Didi of your village today itself and get your checkup completed. 💫 Watch this video to know about Antenatal Checkup👇",
+    "pragnancy_help" : "{{1}} Didi, to know more about taking care of yourself and your baby during pregnancy, press the button below. 👇",
+    "beneficiary_problems_another" : "Good, Does  {{1}}  feel weak🙍♀️, dizzy🥴 , have swollen hands and feet or heaviness in the head?",
+    "child_age_6_test" : "Very nice Didi!! 👌🤩 Health check-ups should be done from time to time during pregnancy. 👩 ⚕️ This will protect the health of the mother and the baby and complications related to pregnancy. 💫 Know more about antenatal check-ups👇",
+    "child_age_6_test_not_done" : "Didi!! 🤔 Health checkups should be done from time to time during pregnancy. 👩 ⚕️ By doing this, mother and child will be saved from complications related to health and pregnancy. Ask <family member Name> Didi to meet Asha Didi of her village and complete her checkup. 💫 Watch this video to know about Pregnancy health Checkup👇",
+    "eligible_test_not_ok" : "oh wow that's greatYes 🎉 {{1}} Didi.. But do you know, more than 60% of the women in India are Anemic😲 You should also go meet the ASHA Didi in your village and get your health checkup done🩸🩸👩 ⚕️",
+    "video_url_one":"https://youtu.be/5qtdVD83vL8",
+    "video_url_two":"https://youtu.be/qX4yD2h5a9c",
+    "video_url_three":"https://youtu.be/_aTUoRMGKDQ",
+    "video_url_four":"https://www.youtube.com/watch?v=IUTob1tMdck",
+    "video_url_five":"https://youtu.be/Cz6yhxJg5OA",
+    "video_url_six":"https://youtu.be/Y-LFxR2ZhGk",
+    "video_url_seven":"https://youtu.be/7U7KybN5CLQ",
+
+
+
+
+
+
+
+
+
+
+
+
+    "user_name" : "Didi, can you please tell me your name? Write in the message below 👇",
+    "another_user_name" : "Can you please tell me the name of the female member of your family who is pregnant now. Write in the message below 👇",
+    "validation_hindi_text" : "Write in the message below 👇",
+    "select_your_district" : "{{1}} Didi, which of these districts do you belong to? Please select its name. 👇",
+    "select_your_another_district" : "{{1}} Didi, which of these districts does she belong to? Please select its name. 👇",
+    "select_your_block" : "{{1}} Didi, which of these blocks do you belong to? Please select its name. 👇",
+    "select_your_another_block" : "{{1}} Didi, which of these blocks does she belong to? Please select its name. 👇",
+    "village_name" : "{{1}} Didi, can please tell me the name of your village. Write in the message below. 👇",
+    "village_another_name" : "Can you tell me the name of the {{1}} Didi's village.",
+    "confirmation_detail" : "{{1}} Didi you have told me that your district name is {{2}}, block name is {{3}} and village name is {{4}}. You are now {{5}} months pregnant. Is all this information correct ✅ or do you want to change some of it. please choose.",
+    "confirmation_another_detail" : "you toldThat {{1}} didi's district name is {{2}}, block name is {{3}} and village name is {{4}}. You are now {{5}} months pregnant. Is all this information correct ✅ or do you want to change some of it. please choose.",
+    "form_data_ok" : "Submit",
+
+
+    "who_hcw" : "Please tell me whether you are ASHA or ANM?",
+    "asha" : "ASHA",
+    "stock_help" : "Didi, I will help you with mother and child health related information and also in calculating the stock of IFA, Calcium and Folic Acid",
+
+    "know_more_asha_anm" : "{{1}} Didi, click on the button below to know more about Mother and Child health.",
+    "know_anemia" : "Anemia Information",
+    "pragnant_women_care" : "Pregnant Woman Care",
+    "child_women_less_6" : "Lactating Woman Care",
+    "stock_calculation" : "Monthly Stock Count",
+    "add_more_beneficiary" : "Add beneficiary",
+    "annual_stock_calculation" : "Annual stock count",
+    "asha_more_list" : "Information on Anemia",
+    "subcenter_name" : "Didi please write the name of your sub center",
+    "asha_confirmation_text" : "{{1}} Didi you have you have told me that you are from {{2}} and the name of your block is {{3}}. You have written the name of your village as {{4}} and you are from {{5}} subcentre. Is all this information correct ✅ or do you want to change some of it. Please select one option",
+    "anm_confirmation_text" : "{{1}} Didi you have you have told me that you are from {{2}} and the name of your block is {{3}}. And you are from {{4}} subcentre. Is all this information correct ✅ or do you want to change some of it. please choose.",
+    "else_more_text" : "{{1}} Didi, click on the button below to know more about Mother and Child health.",
+    "first_third_pranant_women_no" : "Can you tell us how many pregnant women in first trimester are there in your area in this month as per your register? 🤰",
+    "second_third_pranant_women_no" : "Can you tell us how many pregnant women in 2nd and 3rd trimester are there in your area in this month as per your register?🤰",
+    "less_than_child_6_women" : "Can you tell me how many women with children below 6 months of age are there in your area in this month as per your register?",
+    "lachit_dumpati" : "How many eligible couples are there in your area this month according to your register?",
+    "no_iron_mdeicine" : "How many iron tablets do you currently have in stock?",
+    "no_calcium_mdeicine" : "How many calcium tablets do you have in stock?",
+    "no_folic_acid" : "How many folic acid tablets are currently available with you?",
+    "stock_cal_result" : "You will require {{1}} iron tablet💊 {{2}} calcium tablet💊 and {{3}} folic acid tablets💊 this month Please collect the required amount of tablets from your ANM Didi at right time ⏰ 💊💊💊",
+    "annual_pragant_no" : "Can you tell me how many pregnant women there are estimated annually in your area as per the HMIS target?",
+    "annual_lcatating_no" : "Can you me how many women with infant under 6 months are estimated annually in your area as per the HMIS target?",
+    "annual_lakshit_no" : "Can you tell me how many Eligible couples are there in your area as per HMIS target",
+    "annual_final_result" : "Didi you will require {{1}} iron tablet💊, {{2}} calcium tablet💊 and {{3}} folic acid this year.  Please collects the required number of tablets from your PHC or Block at right time. ⏰ 💊💊💊",
+
+
+
+
+
+
+    "anm" : "ANM",
+    "anm_more_list" : ["Anemia Information","Care for Pregnant Woman","Care for Lactating Woman","Monthly Stock Count","Add Beneficiary","Annual Stock Count"],
+
+
+
+
+
+    "from_data_not_ok" : "Cancel",
+    "form_submit_successfully" : "Didi your registration is successful.",
+    "from_submit_not_ok" : "You can start registering again",
+    "select_one_option" : "Choose an option",
+    "valid_button_error" : "Please select correct button",
+    "valid_entry_error" : "You have entered incorrect data, please try again",
+    "FIRSTMONTH" : "Didi some of your baby's organs have started to form. At this time, it is important to take vitamins with folic acid to prevent some birth defects",
+    "SECONDMONTH" : "Didi some of your baby's organs have started to form. At this time, it is important to take vitamins with folic acid to prevent some birth defects",
+    "THIRDMONTH" : "Didi you are in 3rd month now so take care of your care and health and keep taking vitamins with folic acid.",
+    "FOURTHMONTH" : "Didi some of your baby's organs have started to form. At this time, it is important to take vitamins with folic acid to prevent some birth defects",
+    "FIVEMONTH" : "Didi some of your baby's organs have started to form. At this time, it is important to take vitamins with folic acid to prevent some birth defects",
+    "SIXMONTH" : "Didi some of your baby's organs have started to form. At this time, it is important to take vitamins with folic acid to prevent some birth defects",
+    "SEVENMONTH" : "Didi some of your baby's organs have started to form. At this time, it is important to take vitamins with folic acid to prevent some birth defects",
+    "EIGHTMONTH" : "Didi some of your baby's organs have started to form. At this time, it is important to take vitamins with folic acid to prevent some birth defects",
+    "NINEMONTH" : "Didi some of your baby's organs have started to form. At this time, it is important to take vitamins with folic acid to prevent some birth defects",
+    "valueError_INT" : "Please enter a number",
+    "max_four_digit" : "Please Enter a 4 digit number",
+    "ask_more" : "Do you want to ask more about something?"
+}

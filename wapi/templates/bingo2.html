@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'zip/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'zip/css/animate.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'zip/css/style.css' %}" />
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="top row p-2 m-0">
+        <div class="col-6">
+            <span class="heading text-white">Name: &nbsp;</span>
+            <span class="name">Aditya Shukla</span>
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+            <span class="heading text-white">scores &nbsp;</span>
+            <span class="name">50</span>
+        </div>
+    </div>
+    <div class="overall bingo text-center">
+        <div class="col-sm-12 num-wrap num-wrap-min animate__animated animate__backInDown">
+            <span class="numb">2</span>
+        </div>
+
+        <span
+            class="ques animate__animated animate__rubberBand animate__delay-1s d-flex align-items-center justify-content-center">
+            <p>Food to eat in anemia</p>
+        </span>
+        <div class="container">
+            <div class="animate__animated animate__fadeInUp animate__delay-2s">
+                <div class="col-12 d-flex flex-xl-row flex-lg-row flex-md-row flex-column">
+                    <div class="col me-xl-4 me-lg-4 me-md-4">
+                        <input class="checkbox-tools" type="checkbox" name="tools" id="tool-1">
+                        <label class="for-checkbox-tools col-12" for="tool-1">
+                            <img src="{% static 'zip/images/greenvegitables.png' %}" alt="greenvegitables" />
+                            <span>Green Leafy Vegitables</span>
+                        </label>
+                    </div>
+                    <div class="col me-xl-4 me-lg-4 me-md-4">
+                        <input class="checkbox-tools" type="checkbox" name="tools" id="tool-2">
+                        <label class="for-checkbox-tools col-12" for="tool-2">
+                            <img src="{% static 'zip/images/ifa_tablet.png' %}" alt="ifa_tablet" />
+                            <span>IFA Tablet</span>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <input class="checkbox-tools" type="checkbox" name="tools" id="tool-3">
+                        <label class="for-checkbox-tools col-12" for="tool-3">
+                            <img src="{% static 'zip/images/meat.png' %}" alt="meat" />
+                            <span>Meat</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="animate__animated animate__fadeInUp animate__delay-3s">
+                <div class="col-12 d-flex flex-xl-row flex-lg-row flex-md-row flex-column">
+                    <div class="col me-xl-4 me-lg-4 me-md-4">
+                        <input class="checkbox-tools" type="checkbox" name="tools" id="tool-4">
+                        <label class="for-checkbox-tools col-12" for="tool-4">
+                            <img src="{% static 'zip/images/rice.png' %}" alt="rice" />
+                            <span>Rice</span>
+                        </label>
+                    </div>
+                    <div class="col me-xl-4 me-lg-4 me-md-4">
+                        <input class="checkbox-tools" type="checkbox" name="tools" id="tool-5">
+                        <label class="for-checkbox-tools col-12" for="tool-5">
+                            <img src="{% static 'zip/images/junk_food.png' %}" alt="junk_food" />
+                            <span>Chips And Junk Food</span>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <input class="checkbox-tools" type="checkbox" name="tools" id="tool-6">
+                        <label class="for-checkbox-tools col-12" for="tool-6">
+                            <img src="{% static 'zip/images/coffee.png' %}" alt="coffee" />
+                            <span>Coffee</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="animate__animated animate__fadeInUp animate__delay-4s">
+                <div class="col-12 d-flex flex-xl-row flex-lg-row flex-md-row flex-column">
+                    <div class="col me-xl-4 me-lg-4 me-md-4">
+                        <input class="checkbox-tools" type="checkbox" name="tools" id="tool-7">
+                        <label class="for-checkbox-tools col-12" for="tool-7">
+                            <img src="{% static 'zip/images/sprout.png' %}" alt="sprout" />
+                            <span>Sprouts</span>
+                        </label>
+                    </div>
+                    <div class="col me-xl-4 me-lg-4 me-md-4">
+                        <input class="checkbox-tools" type="checkbox" name="tools" id="tool-8">
+                        <label class="for-checkbox-tools col-12" for="tool-8">
+                            <img src="{% static 'zip/images/tea.png' %}" alt="tea" />
+                            <span>Tea</span>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <input class="checkbox-tools" type="checkbox" name="tools" id="tool-9">
+                        <label class="for-checkbox-tools col-12" for="tool-9">
+                            <img src="{% static 'zip/images/lemon.png' %}" alt="Citrus" />
+                            <span>Citrus Like Oranges, Amla, Lemon</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 text-center animate__animated animate__fadeInUp animate__delay-4s"><a
+                    href="bingocorrect.html" class="btn btn-custom">Submit</a></div>
+        </div>
+    </div>
+</body>
+
+</html>

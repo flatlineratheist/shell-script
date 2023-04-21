@@ -1,0 +1,56 @@
+[
+    {
+      "id": 70,
+      "question_for": "ALL",
+      "language": "ENGLISH",
+      "question_text": "You have selected English Language.",
+      "question_code": "selected_lang_en",
+      "created": "2023-02-27 10:12:49",
+      "updated": "2023-02-27 10:13:18"
+    },
+    {
+      "id": 69,
+      "question_for": "ALL",
+      "language": "HINDI",
+      "question_text": "आपने हिंदी भाषा का चयन किया है।",
+      "question_code": "selected_lang_hi",
+      "created": "2023-02-27 10:11:38",
+      "updated": "2023-02-27 10:11:38"
+    },
+    {
+      "id": 68,
+      "question_for": "ALL",
+      "language": "HINDI",
+      "question_text": "English",
+      "question_code": "ENGLISH",
+      "created": "2023-02-27 10:10:34",
+      "updated": "2023-02-27 10:10:34"
+    },
+    {
+      "id": 67,
+      "question_for": "ALL",
+      "language": "HINDI",
+      "question_text": "हिंदी",
+      "question_code": "HINDI",
+      "created": "2023-02-27 10:10:11",
+      "updated": "2023-02-27 10:10:11"
+    },
+    {
+      "id": 66,
+      "question_for": "ALL",
+      "language": "GUJRATI",
+      "question_text": "તમે ગુજરાતી ભાષા પસંદ કરી છે.",
+      "question_code": "selected_lang_guj",
+      "created": "2023-02-27 10:09:22",
+      "updated": "2023-02-27 10:12:20"
+    },
+    {
+      "id": 65,
+      "question_for": "ALL",
+      "language": "GUJRATI",
+      "question_text": "ગુજરાતી",
+      "question_code": "GUJRATI",
+      "created": "2023-02-27 10:03:44",
+      "updated": "2023-02-27 10:03:44"
+    }
+  ]

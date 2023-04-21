@@ -1,0 +1,221 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatbot</title>
+    <link rel="stylesheet" href="{% static 'zip/registration/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'zip/registration/css/style.css' %}" />
+</head>
+
+<body>
+    <script src="{% static 'zip/registration/js/jquery.js' %}"></script>
+    <!-- <script src="{% static 'zip/registration/js/custom.js' %}"></script> -->
+    <div class="container" id="indexHtml">
+        <!-- <div class="overall col-md-8 m-auto" id="indexHtml"> -->
+            <!-- <div class="d-flex mb-2">
+                <div class="col-sm-6 col-8"><input class="inputques" readonly value="what is your name ?" /></div>
+            </div>
+            <div class="d-flex justify-content-end" >
+                <div class="col-sm-6 col-8">
+                    <input class="inputans" readonly value=""  id="showSendMsg" style="display: none;"/>
+                    <div class="d-flex">
+                        <input class="inputedit margin-l-15" value="" id="senderText" />
+
+                        <button type="submit" class="btnforimg">
+                            <img src="{% static 'zip/registration/images/enter.png' %}" class="img_btn" id="img_btn" onclick="sendWMsg()" />
+                        </button>
+                    </div>
+                </div>
+
+            </div> -->
+
+            <!-- Next Input Box -->
+            <!-- <div id="nextQuestionMsg" style="display: none">
+                <div class="d-flex mb-2">
+                    <div class="col-sm-6 col-8"><input class="inputques" readonly value="what is your name ?" /></div>
+                </div>
+                <div class="d-flex justify-content-end" >
+                    <div class="col-sm-6 col-8">
+                        <input class="inputans" readonly value=""  id="showSendMsg" style="display: none;"/>
+                        <div class="d-flex">
+                            <input class="inputedit margin-l-15" value="" id="senderText" />
+    
+                            <button type="submit" class="btnforimg">
+                                <img src="{% static 'zip/registration/images/enter.png' %}" class="img_btn" id="img_btn" onclick="sendWMsg()" />
+                            </button>
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div> -->
+           
+<!--             
+            <div class="d-flex mb-2">
+                <div class="col-sm-6 col-8"><input class="inputques" readonly value="Are you a Asha worker? " /></div>
+            </div>
+            <div class="d-flex justify-content-end">
+                <div class="col-sm-6 col-8">
+                    <input class="inputans" readonly value="Yes" />
+                    <div class="d-flex optionyes_wrapper">
+                        <button class="btn btn-success">Yes</button>
+                        <button class="btn btn-danger margin-l-15">No</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex mb-2">
+                <div class="col-sm-6 col-8"><input class="inputques" readonly value="Are you a Asha worker? " /></div>
+            </div>
+            <div class="d-flex justify-content-end">
+                <div class="col-sm-6 col-8">
+                    <input class="inputans" readonly value="selected option" />
+                    <div class="d-flex optionyes_wrapper">
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Please
+                            select the option.</button>
+                    </div>
+                </div>
+
+            </div> -->
+        <!-- </div> -->
+        <!-- <div class="overall col-md-8 m-auto" id="indexHtml1">
+
+        </div> -->
+    </div>
+    <div class="container" id="indexHtml1"></div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Select Option</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-12 d-flex flex-column">
+                        <input class="checkbox-tools" type="radio" name="tools" id="tool-1">
+                        <label class="for-checkbox-tools col" for="tool-1">
+
+                            Lorem ipsum is placeholder
+                        </label>
+                        <input class="checkbox-tools" type="radio" name="tools" id="tool-2">
+                        <label class="for-checkbox-tools col" for="tool-2">
+
+                            Lorem ipsum is placeholder
+                        </label>
+                        <input class="checkbox-tools" type="radio" name="tools" id="tool-3">
+                        <label class="for-checkbox-tools col" for="tool-3">
+
+                            Lorem ipsum is placeholder
+                        </label>
+                        <input class="checkbox-tools" type="radio" name="tools" id="tool-4">
+                        <label class="for-checkbox-tools col" for="tool-4">
+
+                            Lorem ipsum is placeholder
+                        </label>
+                        <input class="checkbox-tools" type="radio" name="tools" id="tool-5">
+                        <label class="for-checkbox-tools col" for="tool-5">
+
+                            Lorem ipsum is placeholder
+                        </label>
+                        <input class="checkbox-tools" type="radio" name="tools" id="tool-6">
+                        <label class="for-checkbox-tools col" for="tool-6">
+
+                            Lorem ipsum is placeholder
+                        </label>
+                        <input class="checkbox-tools" type="radio" name="tools" id="tool-7">
+                        <label class="for-checkbox-tools col" for="tool-7">
+
+                            Lorem ipsum is placeholder
+                        </label>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success btn-block w-100">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function sendMsgTextHTML(question){
+            htmlText = '<div class="overall col-md-8 m-auto">\
+                            <div class="d-flex mb-2">\
+                            <div class="col-sm-6 col-8"><input class="inputques" readonly value="'+question+'" /></div>\
+                        </div>\
+                        <div class="d-flex justify-content-end">\
+                            <div class="col-sm-6 col-8">\
+                                <input class="inputans" readonly value=""  id="showSendMsg" style="display: none;"/>\
+                                <div class="d-flex">\
+                                    <input class="inputedit margin-l-15" value="" id="senderText" />\
+                                    <button type="submit" class="btnforimg">\
+                                        <img src="{% static "zip/registration/images/enter.png" %}" class="img_btn" id="img_btn" onclick="sendWMsg()" />\
+                                    </button>\
+                                </div>\
+                            </div>\
+                            </div><div>';
+            return htmlText;
+        }
+
+
+        function previousMsgTextHTML(question,answer){
+            htmlText = '<div class="overall col-md-8 m-auto">\
+                            <div class="d-flex mb-2">\
+                            <div class="col-sm-6 col-8"><input class="inputques" readonly value="'+question+'" /></div>\
+                        </div>\
+                        <div class="d-flex justify-content-end">\
+                            <div class="col-sm-6 col-8">\
+                                <input class="inputans" readonly value="'+answer+'"/>\
+                            </div>\
+                        </div></div>';
+            return htmlText;
+        }
+        window.onload = function() {
+            var questionList = [["What is your name?","Aditya Shukla"],["What is your age?",'27']]
+            var nextQuestion = ["What is your mobile number ?"]
+            var htmlCodePrev = previousMsgTextHTML();
+            var htmlCodeCur = sendMsgTextHTML(nextQuestion[0]);
+            
+            mergedQuestion = '';
+            for(var i=0;i<questionList.length;i++){
+                var code = previousMsgTextHTML(questionList[i][0],questionList[i][1]);
+                mergedQuestion = mergedQuestion + code;
+            }
+            $('#indexHtml').html(mergedQuestion);
+            $('#indexHtml1').html(htmlCodeCur);
+            
+            
+        };
+
+
+
+
+
+
+
+        function sendWMsg(){
+          var sendMsg =   $('#senderText').val();
+          if(sendMsg.length == 0){
+            return false;
+          }else{
+            alert("Calling Yes");
+            // $('#showSendMsg').val(sendMsg);
+            // $('#showSendMsg').show();
+            // $('#senderText').hide();
+            // $('#senderText').val("");
+            // alert(sendMsg);
+          }
+            
+        }
+    </script>
+    <script src="{% static 'zip/registration/js/jquery.js' %}"></script>
+    <script src="{% static 'zip/registration/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>
